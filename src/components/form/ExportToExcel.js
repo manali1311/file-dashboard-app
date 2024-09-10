@@ -4,7 +4,6 @@ import * as XLSX from "xlsx";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
 
-// Sample data object based on the form fields
 const ExportToExcel = ({ formData }) => {
   const [fileData, setFileData] = useState([]);
 
