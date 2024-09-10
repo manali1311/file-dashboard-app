@@ -305,19 +305,6 @@ const FormEditor = () => {
       </Card>
 
       <ExportToExcel formData={editField} />
-
-      {formData.map((row, index) => (
-        <Box key={index} sx={{ display: "flex", gap: 2, mb: 2 }}>
-          {Object.keys(row).map((field) => (
-            <TextField
-              key={field}
-              value={row[field]}
-              onChange={(e) => handleFieldChange(index, field, e.target.value)}
-              fullWidth
-            />
-          ))}
-        </Box>
-      ))}
     </Box>
   );
 };
